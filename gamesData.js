@@ -4,10 +4,10 @@ function getData(searchTerm, pageSize="5"){
     
     const promise = axios.request({
       method: 'GET',
-      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=8828ecda53174b9d950215de30a85444&search=${searchTerm}&page_size=${pageSize}`,
+      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=key&search=${searchTerm}&page_size=${pageSize}`,
       headers: {
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
-        'x-rapidapi-key': 'bec55457e7msh2b12e46915c97c2p1851a7jsnf44750cf1241'
+        'x-rapidapi-key': 'key'
       }
     })
         .then((response) => response.data)
@@ -23,10 +23,10 @@ function gameListGenre(genres, pageSize="5"  ){
     
     const promise = axios.request({
       method: 'GET',
-      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=8828ecda53174b9d950215de30a85444&genres=${genres}&page_size=${pageSize}`,
+      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=key&genres=${genres}&page_size=${pageSize}`,
       headers: {
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
-        'x-rapidapi-key': 'bec55457e7msh2b12e46915c97c2p1851a7jsnf44750cf1241'
+        'x-rapidapi-key': 'key'
       }
     })
         .then((response) => response.data)
@@ -41,10 +41,10 @@ function gameListPublisher(publishers, pageSize="5"  ){
     
     const promise = axios.request({
       method: 'GET',
-      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=8828ecda53174b9d950215de30a85444&publishers=${publishers}&page_size=${pageSize}`,
+      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=key&publishers=${publishers}&page_size=${pageSize}`,
       headers: {
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
-        'x-rapidapi-key': 'bec55457e7msh2b12e46915c97c2p1851a7jsnf44750cf1241'
+        'x-rapidapi-key': 'key'
       }
     })
         .then((response) => response.data)
@@ -58,10 +58,10 @@ function gameListPlatform(platform, pageSize="5"  ){
     
     const promise = axios.request({
       method: 'GET',
-      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=8828ecda53174b9d950215de30a85444&platforms=${platform}&page_size=${pageSize}`,
+      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=key&platforms=${platform}&page_size=${pageSize}`,
       headers: {
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
-        'x-rapidapi-key': 'bec55457e7msh2b12e46915c97c2p1851a7jsnf44750cf1241'
+        'x-rapidapi-key': 'key'
       }
     })
         .then((response) => response.data)
@@ -76,10 +76,10 @@ function gameListTags(tags, pageSize="5"  ){
     
     const promise = axios.request({
       method: 'GET',
-      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=8828ecda53174b9d950215de30a85444&tags=${tags}&page_size=${pageSize}`,
+      url: `https://rawg-video-games-database.p.rapidapi.com/games?key=key&tags=${tags}&page_size=${pageSize}`,
       headers: {
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
-        'x-rapidapi-key': 'bec55457e7msh2b12e46915c97c2p1851a7jsnf44750cf1241'
+        'x-rapidapi-key': 'key'
       }
     })
         .then((response) => response.data)
@@ -95,10 +95,10 @@ function getSingleGame(searchTerm){
     
     const promise = axios.request({
       method: 'GET',
-      url: `https://rawg-video-games-database.p.rapidapi.com/games/${searchTerm}?key=8828ecda53174b9d950215de30a85444`,
+      url: `https://rawg-video-games-database.p.rapidapi.com/games/${searchTerm}?key=key`,
       headers: {
         'x-rapidapi-host': 'rawg-video-games-database.p.rapidapi.com',
-        'x-rapidapi-key': 'bec55457e7msh2b12e46915c97c2p1851a7jsnf44750cf1241'
+        'x-rapidapi-key': 'key'
       }
     })
         .then((response) => response.data)
